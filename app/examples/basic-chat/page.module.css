@@ -51,7 +51,7 @@
 }
 
 .cardButton {
-  background-color: #fff;
+  background-color: rgb(253, 232, 203);
   border: 2px solid #dfdfdf;
   color: black;
   padding: 15px;
@@ -71,5 +71,6 @@
 
 .cardButton:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  background-color: #dfdfdf;
+  background-color: rgb(204, 135, 147);
+  color: #fff;
 }
