@@ -22,3 +22,54 @@
     overflow-wrap: break-word;
     background-color: #efefef;
 }
+
+.buttonHeading {
+  margin: 8px 0;
+  text-align: center;
+  padding: 8px 16px;
+  align-self: flex-start;
+  border-radius: 15px;
+  max-width: 78%;
+  overflow-wrap: break-word;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  max-width: 81%;
+}
+
+@media screen and (max-width: 600px) {
+  .buttonContainer {
+    flex-direction: column;
+  }
+
+  .buttonContainer button {
+    width: 100%;
+  }
+}
+
+.cardButton {
+  background-color: #fff;
+  border: 2px solid #dfdfdf;
+  color: black;
+  padding: 15px;
+  width: 30%; /* Set a fixed width */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word; /* Break the word at the end of the line */
+}
+
+.cardButton:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #dfdfdf;
+}

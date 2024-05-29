@@ -55,15 +55,21 @@ type ChatProps = {
   functionCallHandler?: (
     toolCall: RequiredActionFunctionToolCall
   ) => Promise<string>;
+  prompt?: string;
 };
 
 const Chat = ({
   functionCallHandler = () => Promise.resolve(""), // default to return empty string
+  prompt = "",
 }: ChatProps) => {
-  const [userInput, setUserInput] = useState("");
+  const [userInput, setUserInput] = useState(prompt);
   const [messages, setMessages] = useState([]);
   const [inputDisabled, setInputDisabled] = useState(false);
   const [threadId, setThreadId] = useState("");
+
+  useEffect(() => {
+    setUserInput(prompt);
+  }, [prompt]);
 
   // automatically scroll to bottom of chat
   const messagesEndRef = useRef<HTMLDivElement | null>(null);

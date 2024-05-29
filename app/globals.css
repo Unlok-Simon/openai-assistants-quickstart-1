@@ -57,8 +57,18 @@ a {
 
 ul,
 ol {
+  display: block;
   padding-left: 20px;
 }
+
+ul li, ol li {
+  display: list-item;
+}
+
+li::marker {
+  text-indent: 10px !important;
+}
+
 
 a {
   color: blue;
