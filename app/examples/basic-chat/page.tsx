@@ -28,6 +28,7 @@ const Home = () => {
           <button className={styles.cardButton} onClick={() => handleButtonClick("Provide a scenario that demonstrates how values can cause conflict in the workplace")}>Conflict in the workplace example</button>
           <button className={styles.cardButton} onClick={() => handleButtonClick("How should I approach a difficult conversation with an employee who has opposing values to me?")}>Approaching difficult conversations</button>
           <button className={styles.cardButton} onClick={() => handleButtonClick("Provide an example persona of someone with specific values mix. list the 10 values so i can select which ones I want to explore. Ask me what the context is.")}>Explore a persona</button>
+          <button className={styles.cardButton} onClick={() => handleButtonClick("EExplain a value to a 5 year old. Ask me which of the 10 values I would like explained.")}>Explain a value to a 5 year old</button>
         </div>
         <Chat prompt={chatPrompt} />
       </div>
